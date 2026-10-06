@@ -1,0 +1,1 @@
+.reviews-block{padding-block-end:2.5rem}.reviews-block__items{display:grid;grid-template-columns:repeat(auto-fit,minmax(19.375rem,1fr));gap:1.875rem}@media (max-width:48em){.reviews-block__items{gap:1.25rem}}@media (max-width:30em){.reviews-block{padding-block-end:1.25rem}.reviews-block__items{gap:.9375rem}}

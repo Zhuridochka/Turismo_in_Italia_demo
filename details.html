@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <link rel="shortcut icon" href="@img/favicon.ico"> -->
+		<title>Details Page</title>
+		<script type="module" crossorigin="" src="./js/details.min.js?v=1782892379017"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1782892379017">
+		<link rel="modulepreload" crossorigin="" href="./js/reviewssection.min.js?v=1782892379017">
+		<link rel="modulepreload" crossorigin="" href="./js/banner.min.js?v=1782892379017">
+		<link rel="modulepreload" crossorigin="" href="./js/faqsection.min.js?v=1782892379017">
+		<link rel="modulepreload" crossorigin="" href="./js/rating.min.js?v=1782892379017">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1782892379017">
+		<link rel="stylesheet" crossorigin="" href="./css/reviewssection.min.css?v=1782892379017">
+		<link rel="stylesheet" crossorigin="" href="./css/banner.min.css?v=1782892379017">
+		<link rel="stylesheet" crossorigin="" href="./css/faqsection.min.css?v=1782892379017">
+		<link rel="stylesheet" crossorigin="" href="./css/rating.min.css?v=1782892379017">
+		<link rel="stylesheet" crossorigin="" href="./css/details.min.css?v=1782892379017">
+		<link rel="stylesheet" crossorigin="" href="./css/contentform.min.css?v=1782892379017">
+		<link rel="stylesheet" crossorigin="" href="./css/reviewitem.min.css?v=1782892379017">
+		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1782892379017">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" data-fls-header-scroll="600" data-fls-header-scroll-show="" class="header">
+				<div class="header__container">
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="about.html" class="menu__link">Про мене</a>
+								</li>
+								<li class="menu__item">
+									<a href="tours.html" class="menu__link menu__link--active">екскурсії</a>
+								</li>
+								<li class="menu__item">
+									<a href="testimonials.html" class="menu__link">Відгуки</a>
+								</li>
+								<li class="menu__item">
+									<a href="faq.html" class="menu__link">FAQ</a>
+								</li>
+								<li class="menu__item">
+									<a href="contacts.html" class="menu__link">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+				</div>
+			</header>
+			<main class="page">
+				<div data-fls-details="" class="details">
+					<section data-fls-banner="" class="details__banner banner">
+						<div class="banner__container">
+							<h1 data-fls-title="" class="banner__title title title--middle title--white">
+								Dolce Vita Maiori – Castello San Nicola de Thoro-Plano
+								<span>Dolce Vita</span>
+							</h1>
+						</div>
+					</section>
+					<div data-fls-breadcrumbs="" class="details__breadcrumbs breadcrumbs">
+						<div class="breadcrumbs__container">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<a href="index.html" class="breadcrumbs__link">Головна</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Екскурсії</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Dolce Vita Maiori – Castello San Nicola de Thoro-Plano</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="details__blog-section blog-section">
+						<div class="blog-section__container">
+							<div class="blog-section__main">
+								<div class="blog-section__top">
+									<ul class="blog-section__list">
+										<li data-fls-featurecard="" class="blog-section__card feature-card">
+											<div class="feature-card__icon --icon-calendar"></div>
+											<dl class="feature-card__body">
+												<dt class="feature-card__label">Тривалість</dt>
+												<dd class="feature-card__value">до 8 годин</dd>
+											</dl>
+										</li>
+										<li data-fls-featurecard="" class="blog-section__card feature-card">
+											<div class="feature-card__icon --icon-euro"></div>
+											<dl class="feature-card__body">
+												<dt class="feature-card__label">Вартість</dt>
+												<dd class="feature-card__value">від 550 €</dd>
+											</dl>
+										</li>
+										<li data-fls-featurecard="" class="blog-section__card feature-card">
+											<div class="feature-card__icon --icon-directions_walk"></div>
+											<dl class="feature-card__body">
+												<dt class="feature-card__label">Формат</dt>
+												<dd class="feature-card__value --icon-error">Піша екскурсія</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+								<div class="blog-section__journey">
+									<!-- Story -->
+									<section class="blog-section__story story">
+										<h2 data-fls-title="" class="story__title title title--tiny">Про подорож</h2>
+										<div class="story__text">
+											<p>
+												Є місця, які неможливо “просто відвідати”.
+                Їх потрібно прожити.
+												<br>
+												Ця прогулянка — саме про такий Amalfi Coast. Не глянцевий і туристичний, а глибший, старовинний, майже кінематографічний.
+											</p>
+											<p>
+												Про стежки серед лимонних садів, старі фортеці над морем, запах дикого розмарину в повітрі, келих домашнього вина після довгого підйому і той момент, коли стоїш високо над узбережжям і розумієш, наскільки неймовірним може бути цей світ.
+											</p>
+											<p>
+												Ми розпочнемо день у Майорі — одному з найавтентичніших і найприємніших містечок Амальфітанського узбережжя.
+												<br>
+												На відміну від більш гучних і туристичних міст, Майорі має зовсім інший ритм: широка набережна, місцеве життя, ранкова кава біля моря і атмосфера справжньої південної Італії без поспіху.
+											</p>
+											<p>
+												Перед початком маршруту ми прогуляємося історичним центром і побачимо Collegiata di Santa Maria a Mare — головну церкву міста, яка височіє над Майорі.
+												<br>
+												Саме тут зберігається старовинна дерев’яна статуя Діви Марії з немовлям, яку, за легендою, знайшли в морі після того, як моряки були змушені викинути її за борт під час шторму, щоб врятувати корабель.
+											</p>
+											<p>
+												Усередині також можна побачити монументальний поліфонічний орган і крипту з мощами Святого Климента.
+                Далі пройдемо повз Palazzo Mezzacapo — одну з найелегантніших історичних будівель Майорі з фресками в стилі бароко.
+												<br>
+												Особливу красу цьому місцю надають його сади, створені у формі мальтійського хреста — тихий і дуже атмосферний куточок серед пальм, квітів та старовинної архітектури.
+											</p>
+											<p>
+												І вже звідси почнеться наша дорога вгору — до Castello San Nicola de Thoro-Plano, середньовічної фортеці IX століття, яка століттями охороняла узбережжя від нападів сарацинів.
+                Це не просто замок.
+											</p>
+										</div>
+										<div class="story__gallery">
+											<figure class="story__picture">
+												<picture>
+													<img alt="Image" src="./assets/img/story__picture.webp" srcset="./assets/img/story__picture.webp 1x,./assets/img/story__picture-2x.webp 2x,./assets/img/story__picture-3x.webp 3x">
+												</picture>
+											</figure>
+											<figure class="story__picture">
+												<picture>
+													<img alt="Image" src="./assets/img/story__picture-02.webp" srcset="./assets/img/story__picture-02.webp 1x,./assets/img/story__picture-02-2x.webp 2x,./assets/img/story__picture-02-3x.webp 3x">
+												</picture>
+											</figure>
+										</div>
+										<div class="story__text">
+											<p>
+												Удень вони спостерігали за морем у тиші, а вночі перетворювалися на систему вогнів, попереджаючи про наближення сарацинських кораблів.
+                Достатньо було одного багаття — і сигнал проходив уздовж усього узбережжя.
+                Сьогодні ці вежі виглядають майже романтично.
+                Але за цією красою — століття історії, страху, сили та боротьби.
+                Коли ми дістанемося Castello San Nicola de Thoro-Plano, перед нами відкриється один із найкрасивіших краєвидів узбережжя.
+                Звідси видно Майорі, море, Равелло, Трамонті та зелені гори Латтарі, які ніби обіймають узбережжя.
+											</p>
+											<p>
+												І саме тут починається найособливіша частина цього дня.
+                Нас зустріне власник замку — Crescenzo De Martino, чия родина вже близько 200 років доглядає цю фортецю.
+											</p>
+										</div>
+										<div class="story__gallery story__gallery--second">
+											<figure class="story__picture">
+												<picture>
+													<img alt="Image" src="./assets/img/story__picture.webp" srcset="./assets/img/story__picture.webp 1x,./assets/img/story__picture-2x.webp 2x,./assets/img/story__picture-3x.webp 3x">
+												</picture>
+											</figure>
+											<figure class="story__picture">
+												<picture>
+													<img alt="Image" src="./assets/img/story__picture-02.webp" srcset="./assets/img/story__picture-02.webp 1x,./assets/img/story__picture-02-2x.webp 2x,./assets/img/story__picture-02-3x.webp 3x">
+												</picture>
+											</figure>
+											<figure class="story__picture">
+												<picture>
+													<img alt="Image" src="./assets/img/story__picture-03.webp" srcset="./assets/img/story__picture-03.webp 1x,./assets/img/story__picture-03-2x.webp 2x,./assets/img/story__picture-03-3x.webp 3x">
+												</picture>
+											</figure>
+										</div>
+										<div class="story__text">
+											<p>
+												Удень вони спостерігали за морем у тиші, а вночі перетворювалися на систему вогнів, попереджаючи про наближення сарацинських кораблів.
+                Достатньо було одного багаття — і сигнал проходив уздовж усього узбережжя.
+                Сьогодні ці вежі виглядають майже романтично.
+                Але за цією красою — століття історії, страху, сили та боротьби.
+                Коли ми дістанемося Castello San Nicola de Thoro-Plano, перед нами відкриється один із найкрасивіших краєвидів узбережжя.
+                Звідси видно Майорі, море, Равелло, Трамонті та зелені гори Латтарі, які ніби обіймають узбережжя.
+											</p>
+											<p>
+												І саме тут починається найособливіша частина цього дня.
+                Нас зустріне власник замку — Crescenzo De Martino, чия родина вже близько 200 років доглядає цю фортецю.
+											</p>
+										</div>
+									</section>
+									<!-- Places -->
+									<section class="blog-section__places notitia">
+										<h2 data-fls-title="" class="notitia__title title title--tiny">Що вас чекає</h2>
+										<ul class="notitia__list">
+											<li class="notitia__item --icon-check">
+												<p class="notitia__info">Майорі — автентичне містечко Amalfi Coast</p>
+											</li>
+											<li class="notitia__item --icon-check">
+												<p class="notitia__info">Collegiata di Santa Maria a Mare</p>
+											</li>
+										</ul>
+									</section>
+									<!-- Includes -->
+									<section class="blog-section__includes notitia">
+										<h2 data-fls-title="" class="notitia__title title title--tiny">У вартість входить</h2>
+										<ul class="notitia__list">
+											<li class="notitia__item">
+												<p class="notitia__info">супровід і організація</p>
+											</li>
+											<li class="notitia__item">
+												<p class="notitia__info">екскурсія замком із власником</p>
+											</li>
+											<li class="notitia__item">
+												<p class="notitia__info">допомога з логістикою</p>
+											</li>
+										</ul>
+									</section>
+									<!-- Packing -->
+									<section class="blog-section__packing notitia">
+										<h2 data-fls-title="" class="notitia__title title title--tiny">Що взяти з собою</h2>
+										<ul class="notitia__list">
+											<li class="notitia__item --icon-check">
+												<p class="notitia__info">зручне взуття без підборів</p>
+											</li>
+											<li class="notitia__item --icon-check">
+												<p class="notitia__info">воду</p>
+											</li>
+										</ul>
+									</section>
+									<!-- Recommendation -->
+									<section class="blog-section__recommendation">
+										<h2 data-fls-title="" class="blog-section__title title title--tiny">Рекомендація</h2>
+										<div class="blog-section__text">
+											<p>
+												Цю прогулянку особливо рекомендую тим, хто хоче побачити Amalfi Coast глибше: не лише красиві листівки, а місця з історією, характером і душею.
+											</p>
+										</div>
+									</section>
+								</div>
+								<div class="blog-section__conclusion conclusion">
+									<div class="conclusion__text">
+										<p>
+											Dolce Vita Maiori — Castello San Nicola — це день, після якого Amalfi Coast залишиться з вами вже зовсім по-іншому
+										</p>
+									</div>
+								</div>
+							</div>
+							<aside class="blog-section__aside">
+								<section data-fls-contentform="" class="blog-section__content-form content-form">
+									<div class="content-form__body">
+										<h2 data-fls-title="" class="content-form__title title title--small">
+											Створіть мій день на узбережжі
+											<span>checkout</span>
+										</h2>
+										<div class="content-form__text">Найкращі подорожі — це ті, де все відчувається легко</div>
+										<form class="content-form__form form" data-fls-form="dev" data-fls-form-popup="popup" method="POST" action="/sendmail">
+											<div class="form__list">
+												<!-- Ім'я -->
+												<div class="form__line line">
+													<input required type="text" name="name" data-fls-form-errtext="Введіть своє ім'я" placeholder="Ваше ім'я" class="line__input input">
+													<span class="line__icon --icon-user"></span>
+												</div>
+												<!-- Кількість людей -->
+												<div class="form__line line">
+													<select required class="line__input select select--form" name="form[]" data-fls-select="" data-fls-select-modif="form">
+														<option value="1" selected>Скільки людей буде?</option>
+														<option value="2">1</option>
+														<option value="3">2</option>
+														<option value="4">3</option>
+														<option value="4">4</option>
+													</select>
+													<span class="line__icon --icon-directions_walk"></span>
+												</div>
+												<!-- Календар -->
+												<div class="form__line line">
+													<input required data-fls-datepicker="" autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Оберіть дату" class="line__input input">
+													<span class="line__icon --icon-calendar"></span>
+												</div>
+											</div>
+											<button data-fls-button="" type="submit" class="form__button button button--yel">
+												Створити мій день
+												<span class="--icon-arrow_right"></span>
+											</button>
+										</form>
+									</div>
+								</section>
+							</aside>
+						</div>
+					</div>
+					<section data-fls-reviewssection="" class="details__reviews-section reviews-section">
+						<div class="reviews-section__image-bg reviews-section__image-bg--left">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/bg-reviews-600.webp 1x,./assets/img/bg-reviews-600-2x.webp 2x,./assets/img/bg-reviews-600-3x.webp 3x" type="image/webp">
+								<img alt="BG" src="./assets/img/bg-reviews.webp" srcset="./assets/img/bg-reviews.webp 1x,./assets/img/bg-reviews-2x.webp 2x,./assets/img/bg-reviews-3x.webp 3x">
+							</picture>
+						</div>
+						<div class="reviews-section__image-bg reviews-section__image-bg--right">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/bg-reviews-600.webp 1x,./assets/img/bg-reviews-600-2x.webp 2x,./assets/img/bg-reviews-600-3x.webp 3x" type="image/webp">
+								<img alt="BG" src="./assets/img/bg-reviews.webp" srcset="./assets/img/bg-reviews.webp 1x,./assets/img/bg-reviews-2x.webp 2x,./assets/img/bg-reviews-3x.webp 3x">
+							</picture>
+						</div>
+						<div class="reviews-section__container">
+							<h2 data-fls-title="" class="reviews-section__title title title--middle">
+								пишуть про мене
+								<span>people</span>
+							</h2>
+							<div class="reviews-section__content">
+								<div data-fls-slider="" class="reviews-section__slider swiper">
+									<div class="reviews-section__wrapper swiper-wrapper">
+										<!-- Слайд 1 -->
+										<div data-fls-reviewitem="" class="reviews-section__slide swiper-slide review-item review-item--people">
+											<div class="review-item__main">
+												<div data-fls-rating="set" class="review-item__rating rating rating--rew"></div>
+												<p class="review-item__text">
+													Дякую тобі величезне за цю пригоду. Пережиті емоції ні з чим незрівнянні. Було супер! Видосики хочеться дивитися на повторі.
+												</p>
+											</div>
+											<div class="review-item__floor">
+												<a href="#" class="review-item__photo">
+													<picture>
+														<img alt="Photo user" src="./assets/img/user-photo.webp" srcset="./assets/img/user-photo.webp 1x,./assets/img/user-photo-2x.webp 2x,./assets/img/user-photo-3x.webp 3x">
+													</picture>
+												</a>
+												<div class="review-item__content">
+													<div class="review-item__name">Инга Слободнюк</div>
+													<p class="review-item__geo">Амальфитанское побережье</p>
+												</div>
+											</div>
+										</div>
+										<!-- Слайд 2 -->
+										<div data-fls-reviewitem="" class="reviews-section__slide swiper-slide review-item review-item--people">
+											<div class="review-item__main">
+												<div data-fls-rating="set" class="review-item__rating rating rating--rew"></div>
+												<p class="review-item__text">
+													Дякую тобі величезне за цю пригоду. Пережиті емоції ні з чим незрівнянні. Було супер! Видосики хочеться дивитися на повторі.
+												</p>
+											</div>
+											<div class="review-item__floor">
+												<a href="#" class="review-item__photo">
+													<picture>
+														<img alt="Photo user" src="./assets/img/user-photo.webp" srcset="./assets/img/user-photo.webp 1x,./assets/img/user-photo-2x.webp 2x,./assets/img/user-photo-3x.webp 3x">
+													</picture>
+												</a>
+												<div class="review-item__content">
+													<div class="review-item__name">Инга Слободнюк</div>
+													<p class="review-item__geo">Амальфитанское побережье</p>
+												</div>
+											</div>
+										</div>
+										<!-- Слайд 3 -->
+										<div data-fls-reviewitem="" class="reviews-section__slide swiper-slide review-item review-item--people">
+											<div class="review-item__main">
+												<div data-fls-rating="set" class="review-item__rating rating rating--rew"></div>
+												<p class="review-item__text">
+													Дякую тобі величезне за цю пригоду. Пережиті емоції ні з чим незрівнянні. Було супер! Видосики хочеться дивитися на повторі.
+												</p>
+											</div>
+											<div class="review-item__floor">
+												<a href="#" class="review-item__photo">
+													<picture>
+														<img alt="Photo user" src="./assets/img/user-photo.webp" srcset="./assets/img/user-photo.webp 1x,./assets/img/user-photo-2x.webp 2x,./assets/img/user-photo-3x.webp 3x">
+													</picture>
+												</a>
+												<div class="review-item__content">
+													<div class="review-item__name">Инга Слободнюк</div>
+													<p class="review-item__geo">Амальфитанское побережье</p>
+												</div>
+											</div>
+										</div>
+										<!-- Слайд 4 -->
+										<div data-fls-reviewitem="" class="reviews-section__slide swiper-slide review-item review-item--people">
+											<div class="review-item__main">
+												<div data-fls-rating="set" class="review-item__rating rating rating--rew"></div>
+												<p class="review-item__text">
+													Дякую тобі величезне за цю пригоду. Пережиті емоції ні з чим незрівнянні. Було супер! Видосики хочеться дивитися на повторі.
+												</p>
+											</div>
+											<div class="review-item__floor">
+												<a href="#" class="review-item__photo">
+													<picture>
+														<img alt="Photo user" src="./assets/img/user-photo.webp" srcset="./assets/img/user-photo.webp 1x,./assets/img/user-photo-2x.webp 2x,./assets/img/user-photo-3x.webp 3x">
+													</picture>
+												</a>
+												<div class="review-item__content">
+													<div class="review-item__name">Инга Слободнюк</div>
+													<p class="review-item__geo">Амальфитанское побережье</p>
+												</div>
+											</div>
+										</div>
+										<!-- Слайд 5 -->
+										<div data-fls-reviewitem="" class="reviews-section__slide swiper-slide review-item review-item--people">
+											<div class="review-item__main">
+												<div data-fls-rating="set" class="review-item__rating rating rating--rew"></div>
+												<p class="review-item__text">
+													Дякую тобі величезне за цю пригоду. Пережиті емоції ні з чим незрівнянні. Було супер! Видосики хочеться дивитися на повторі.
+												</p>
+											</div>
+											<div class="review-item__floor">
+												<a href="#" class="review-item__photo">
+													<picture>
+														<img alt="Photo user" src="./assets/img/user-photo.webp" srcset="./assets/img/user-photo.webp 1x,./assets/img/user-photo-2x.webp 2x,./assets/img/user-photo-3x.webp 3x">
+													</picture>
+												</a>
+												<div class="review-item__content">
+													<div class="review-item__name">Инга Слободнюк</div>
+													<p class="review-item__geo">Амальфитанское побережье</p>
+												</div>
+											</div>
+										</div>
+										<!-- Слайд 6 -->
+										<div data-fls-reviewitem="" class="reviews-section__slide swiper-slide review-item review-item--people">
+											<div class="review-item__main">
+												<div data-fls-rating="set" class="review-item__rating rating rating--rew"></div>
+												<p class="review-item__text">
+													Дякую тобі величезне за цю пригоду. Пережиті емоції ні з чим незрівнянні. Було супер! Видосики хочеться дивитися на повторі.
+												</p>
+											</div>
+											<div class="review-item__floor">
+												<a href="#" class="review-item__photo">
+													<picture>
+														<img alt="Photo user" src="./assets/img/user-photo.webp" srcset="./assets/img/user-photo.webp 1x,./assets/img/user-photo-2x.webp 2x,./assets/img/user-photo-3x.webp 3x">
+													</picture>
+												</a>
+												<div class="review-item__content">
+													<div class="review-item__name">Инга Слободнюк</div>
+													<p class="review-item__geo">Амальфитанское побережье</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="reviews-section__swiper-pagination swiper-pagination"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section data-fls-faqsection="" class="details__faq-section faq-section">
+						<div class="faq-section__container">
+							<h2 data-fls-title="" class="faq-section__title title title--middle">
+								Часті питання
+								<span>faq</span>
+							</h2>
+							<div class="faq-section__content">
+								<div data-fls-spollers="" data-fls-spollers-one="" class="faq-section__spollers spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title --icon-plus">Наскільки наперед краще бронювати екскурсії?</summary>
+										<div class="spollers__body">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem aspernatur recusandae fuga, ab repellat voluptate ex doloribus impedit, nam aperiam. Magnam veniam sequi voluptas porro unde blanditiis saepe totam!
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title --icon-plus">Коли краще поїхати на узбережжя Амальфі?</summary>
+										<div class="spollers__body">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem aspernatur recusandae fuga, ab repellat voluptate ex doloribus impedit, nam aperiam. Magnam veniam sequi voluptas porro unde blanditiis saepe totam!
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title --icon-plus">Чи можна з дітьми?</summary>
+										<div class="spollers__body">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem aspernatur recusandae fuga, ab repellat voluptate ex doloribus impedit, nam aperiam. Magnam veniam sequi voluptas porro unde blanditiis saepe totam!
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title --icon-plus">Чи є послуга трансферу?</summary>
+										<div class="spollers__body">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem aspernatur recusandae fuga, ab repellat voluptate ex doloribus impedit, nam aperiam. Magnam veniam sequi voluptas porro unde blanditiis saepe totam!
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title --icon-plus">Наскільки наперед краще бронювати екскурсії?</summary>
+										<div class="spollers__body">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem aspernatur recusandae fuga, ab repellat voluptate ex doloribus impedit, nam aperiam. Magnam veniam sequi voluptas porro unde blanditiis saepe totam!
+										</div>
+									</details>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</main>
+			<section data-fls-subscribe="" class="subscribe">
+				<div class="subscribe__container">
+					<h2 data-fls-title="" class="subscribe__title title title--middle">
+						Підпишіться на розсилку
+						<span>subscribe</span>
+					</h2>
+					<p class="subscribe__text">Заощадьте до 50% на турах та поїздках. Отримайте миттєвий доступ до нижчих цін.</p>
+					<form class="subscribe__form form-subs" data-fls-form-validatenow="" data-fls-form="dev" data-fls-form-popup="popup" method="POST" action="/sendmail" novalidate>
+						<input required type="email" name="form[email]" data-fls-form-errtext="Error" placeholder="E-mail" class="form-subs__input input">
+						<button type="submit" class="form-subs__button button button--yel">
+							Підписатися
+							<span class="--icon-arrow_right"></span>
+						</button>
+					</form>
+				</div>
+			</section>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<ul data-fls-sociallist="" class="footer__social-list social-list">
+						<li class="social-list__social-elem">
+							<a href="#" class="social-list__link --icon-s-insta" aria-label="Instagram"></a>
+						</li>
+						<li class="social-list__social-elem">
+							<a href="#" class="social-list__link social-list__link--youtube --icon-s-youtube" aria-label="Youtube"></a>
+						</li>
+						<li class="social-list__social-elem">
+							<a href="#" class="social-list__link --icon-s-telega" aria-label="Telegram"></a>
+						</li>
+					</ul>
+					<div class="footer__info">
+						<ul class="footer__info-elements">
+							<li class="footer__info-element">
+								<p>Copyright © 2026</p>
+							</li>
+							<li class="footer__info-element">
+								<a href="#" class="footer__info-link">Политика конфиденциальности</a>
+							</li>
+							<li class="footer__info-element">
+								<a href="#" class="footer__info-link">Cookies Policy</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__bottom">
+						<p class="footer__bottom-text">
+							Developed by
+							<a href="#" class="--icon-logo_michael">Michael Studioo</a>
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

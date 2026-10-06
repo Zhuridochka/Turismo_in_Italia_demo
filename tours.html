@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <link rel="shortcut icon" href="@img/favicon.ico"> -->
+		<title>Tours Page</title>
+		<script type="module" crossorigin="" src="./js/tours.min.js?v=1782892379018"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1782892379018">
+		<link rel="modulepreload" crossorigin="" href="./js/banner.min.js?v=1782892379018">
+		<link rel="modulepreload" crossorigin="" href="./js/faqsection.min.js?v=1782892379018">
+		<link rel="modulepreload" crossorigin="" href="./js/rating.min.js?v=1782892379018">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1782892379018">
+		<link rel="stylesheet" crossorigin="" href="./css/banner.min.css?v=1782892379018">
+		<link rel="stylesheet" crossorigin="" href="./css/faqsection.min.css?v=1782892379018">
+		<link rel="stylesheet" crossorigin="" href="./css/rating.min.css?v=1782892379018">
+		<link rel="stylesheet" crossorigin="" href="./css/tours.min.css?v=1782892379018">
+		<link rel="stylesheet" crossorigin="" href="./css/booking.min.css?v=1782892379018">
+		<link rel="stylesheet" crossorigin="" href="./css/choiceelem.min.css?v=1782892379018">
+		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1782892379018">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" data-fls-header-scroll="600" data-fls-header-scroll-show="" class="header">
+				<div class="header__container">
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="about.html" class="menu__link">Про мене</a>
+								</li>
+								<li class="menu__item">
+									<a href="tours.html" class="menu__link menu__link--active">екскурсії</a>
+								</li>
+								<li class="menu__item">
+									<a href="testimonials.html" class="menu__link">Відгуки</a>
+								</li>
+								<li class="menu__item">
+									<a href="faq.html" class="menu__link">FAQ</a>
+								</li>
+								<li class="menu__item">
+									<a href="contacts.html" class="menu__link">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+				</div>
+			</header>
+			<main class="page">
+				<div data-fls-tours="" class="tours">
+					<section data-fls-banner="" class="tours__banner banner">
+						<div class="banner__container">
+							<h1 data-fls-title="" class="banner__title title title--middle title--white">
+								Авторські досвіди подорожей
+								<span>tours</span>
+							</h1>
+						</div>
+					</section>
+					<div data-fls-breadcrumbs="" class="tours__breadcrumbs breadcrumbs">
+						<div class="breadcrumbs__container">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<a href="index.html" class="breadcrumbs__link">Головна</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Екскурсії</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tours__offers offers">
+						<div class="offers__container">
+							<ul class="offers__list">
+								<!-- Card 1 -->
+								<li data-fls-productcard="" class="offers__card product-card">
+									<figure class="product-card__picture">
+										<a href="#" class="product-card__picture-link">
+											<picture>
+												<img loading="lazy" alt="Image 01" src="./assets/img/products/picture_01.webp" srcset="./assets/img/products/picture_01.webp 1x,./assets/img/products/picture_01-2x.webp 2x,./assets/img/products/picture_01-3x.webp 3x">
+											</picture>
+										</a>
+									</figure>
+									<div class="product-card__body">
+										<div class="product-card__inner">
+											<div class="product-card__top">
+												<div data-fls-plate="" class="product-card__plate plate">
+													<span class="--icon-calendar"></span>
+													<p class="plate__text">1- 3 дні</p>
+												</div>
+												<div data-fls-plate="" class="product-card__plate plate">
+													<span class="--icon-user"></span>
+													<p class="plate__text">Індивідуальний</p>
+												</div>
+												<div data-fls-rating="set" class="product-card__rating rating"></div>
+											</div>
+											<h2 class="product-card__title">Амальфітанське узбережжя</h2>
+											<p class="product-card__text">
+												Острів який за легендою виник від неможливого кохання. Вона — витончена, ніжна та мила молода жінка. Він — пристрасний, запальний та красивий.
+											</p>
+											<div class="product-card__footer">
+												<p class="product-card__price">
+													від
+													<span>600€</span>
+												</p>
+												<a href="#" data-fls-button="" class="product-card__button button">
+													Дивитися деталі
+													<span class="--icon-arrow_right"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<!-- Card 2 -->
+								<li data-fls-productcard="" class="offers__card product-card">
+									<figure class="product-card__picture">
+										<a href="#" class="product-card__picture-link">
+											<picture>
+												<img loading="lazy" alt="Image 02" src="./assets/img/products/picture_02.webp" srcset="./assets/img/products/picture_02.webp 1x,./assets/img/products/picture_02-2x.webp 2x,./assets/img/products/picture_02-3x.webp 3x">
+											</picture>
+										</a>
+									</figure>
+									<div class="product-card__body">
+										<div class="product-card__inner">
+											<div class="product-card__top">
+												<div data-fls-plate="" class="product-card__plate plate">
+													<span class="--icon-calendar"></span>
+													<p class="plate__text">1- 3 дні</p>
+												</div>
+												<div data-fls-plate="" class="product-card__plate plate">
+													<span class="--icon-user"></span>
+													<p class="plate__text">Індивідуальний</p>
+												</div>
+												<div data-fls-rating="set" class="product-card__rating rating"></div>
+											</div>
+											<h2 class="product-card__title">Амальфітанське узбережжя</h2>
+											<p class="product-card__text">
+												Острів який за легендою виник від неможливого кохання. Вона — витончена, ніжна та мила молода жінка. Він — пристрасний, запальний та красивий.
+											</p>
+											<div class="product-card__footer">
+												<p class="product-card__price">
+													від
+													<span>600€</span>
+												</p>
+												<a href="#" data-fls-button="" class="product-card__button button">
+													Дивитися деталі
+													<span class="--icon-arrow_right"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<!-- Card 3 -->
+								<li data-fls-productcard="" class="offers__card product-card">
+									<figure class="product-card__picture">
+										<a href="#" class="product-card__picture-link">
+											<picture>
+												<img loading="lazy" alt="Image 03" src="./assets/img/products/picture_03.webp" srcset="./assets/img/products/picture_03.webp 1x,./assets/img/products/picture_03-2x.webp 2x,./assets/img/products/picture_03-3x.webp 3x">
+											</picture>
+										</a>
+									</figure>
+									<div class="product-card__body">
+										<div class="product-card__inner">
+											<div class="product-card__top">
+												<div data-fls-plate="" class="product-card__plate plate">
+													<span class="--icon-calendar"></span>
+													<p class="plate__text">1- 3 дні</p>
+												</div>
+												<div data-fls-plate="" class="product-card__plate plate">
+													<span class="--icon-user"></span>
+													<p class="plate__text">Індивідуальний</p>
+												</div>
+												<div data-fls-rating="set" class="product-card__rating rating"></div>
+											</div>
+											<h2 class="product-card__title">Амальфітанське узбережжя</h2>
+											<p class="product-card__text">
+												Острів який за легендою виник від неможливого кохання. Вона — витончена, ніжна та мила молода жінка. Він — пристрасний, запальний та красивий.
+											</p>
+											<div class="product-card__footer">
+												<p class="product-card__price">
+													від
+													<span>600€</span>
+												</p>
+												<a href="#" data-fls-button="" class="product-card__button button">
+													Дивитися деталі
+													<span class="--icon-arrow_right"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<!-- Card 4 -->
+								<li data-fls-productcard="" class="offers__card product-card">
+									<figure class="product-card__picture">
+										<a href="#" class="product-card__picture-link">
+											<picture>
+												<img loading="lazy" alt="Image 04" src="./assets/img/products/picture_04.webp" srcset="./assets/img/products/picture_04.webp 1x,./assets/img/products/picture_04-2x.webp 2x,./assets/img/products/picture_04-3x.webp 3x">
+											</picture>
+										</a>
+									</figure>
+									<div class="product-card__body">
+										<div class="product-card__inner">
+											<div class="product-card__top">
+												<div data-fls-plate="" class="product-card__plate plate">
+													<span class="--icon-calendar"></span>
+													<p class="plate__text">1- 3 дні</p>
+												</div>
+												<div data-fls-plate="" class="product-card__plate plate">
+													<span class="--icon-user"></span>
+													<p class="plate__text">Індивідуальний</p>
+												</div>
+												<div data-fls-rating="set" class="product-card__rating rating"></div>
+											</div>
+											<h2 class="product-card__title">Амальфітанське узбережжя</h2>
+											<p class="product-card__text">
+												Острів який за легендою виник від неможливого кохання. Вона — витончена, ніжна та мила молода жінка. Він — пристрасний, запальний та красивий.
+											</p>
+											<div class="product-card__footer">
+												<p class="product-card__price">
+													від
+													<span>600€</span>
+												</p>
+												<a href="#" data-fls-button="" class="product-card__button button">
+													Дивитися деталі
+													<span class="--icon-arrow_right"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<section class="tours__booking booking-section">
+						<div class="booking-section__container">
+							<div data-fls-booking="" class="booking">
+								<div class="booking__body">
+									<div class="booking__content">
+										<h2 data-fls-title="" class="booking__title title title--middle title--white">
+											контакти
+				та бронювання
+											<span>contacts</span>
+										</h2>
+										<p class="booking__text">Зв'яжіться з нами для отримання додаткової інформації.</p>
+									</div>
+									<div class="booking__buttons">
+										<button data-fls-button="" class="booking__button button button--yel">
+											Підібрати тур
+											<span class="--icon-arrow_right"></span>
+										</button>
+										<button data-fls-button="" class="booking__button button button--white">
+											Написати в WhatsApp
+											<span class="--icon-arrow_right"></span>
+										</button>
+									</div>
+								</div>
+								<figure class="booking__image">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/image-booking-600.webp 1x,./assets/img/image-booking-600-2x.webp 2x,./assets/img/image-booking-600-3x.webp 3x" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/image-booking-1200.webp 1x,./assets/img/image-booking-1200-2x.webp 2x,./assets/img/image-booking-1200-3x.webp 3x" type="image/webp">
+										<img alt="Image" src="./assets/img/image-booking.webp" srcset="./assets/img/image-booking.webp 1x,./assets/img/image-booking-2x.webp 2x,./assets/img/image-booking-3x.webp 3x">
+									</picture>
+								</figure>
+							</div>
+						</div>
+					</section>
+					<section data-fls-choicesection="" class="tours__choice-section choice-section">
+						<div class="choice-section__container">
+							<h2 data-fls-title="" class="choice-section__title title title--middle">
+								Чому вибирають мене
+								<span>choice</span>
+							</h2>
+							<ul class="choice-section__list">
+								<li data-fls-choiceelem="" class="choice-section__element choice-elem">
+									<figure class="choice-elem__picture">
+										<a href="#" class="choice-elem__picture-link">
+											<picture>
+												<img loading="lazy" alt="Image 01" src="./assets/img/choice/picture_01.webp" srcset="./assets/img/choice/picture_01.webp 1x,./assets/img/choice/picture_01-2x.webp 2x,./assets/img/choice/picture_01-3x.webp 3x">
+											</picture>
+										</a>
+									</figure>
+									<div class="choice-elem__body">
+										<p class="choice-elem__text">
+											Індивідуальні
+											<br>
+											маршрути
+										</p>
+									</div>
+								</li>
+								<li data-fls-choiceelem="" class="choice-section__element choice-elem">
+									<figure class="choice-elem__picture">
+										<a href="#" class="choice-elem__picture-link">
+											<picture>
+												<img loading="lazy" alt="Image 02" src="./assets/img/choice/picture_02.webp" srcset="./assets/img/choice/picture_02.webp 1x,./assets/img/choice/picture_02-2x.webp 2x,./assets/img/choice/picture_02-3x.webp 3x">
+											</picture>
+										</a>
+									</figure>
+									<div class="choice-elem__body">
+										<p class="choice-elem__text">
+											Без натовпів
+											<br>
+											туристів
+										</p>
+									</div>
+								</li>
+								<li data-fls-choiceelem="" class="choice-section__element choice-elem">
+									<figure class="choice-elem__picture">
+										<a href="#" class="choice-elem__picture-link">
+											<picture>
+												<img loading="lazy" alt="Image 03" src="./assets/img/choice/picture_03.webp" srcset="./assets/img/choice/picture_03.webp 1x,./assets/img/choice/picture_03-2x.webp 2x,./assets/img/choice/picture_03-3x.webp 3x">
+											</picture>
+										</a>
+									</figure>
+									<div class="choice-elem__body">
+										<p class="choice-elem__text">
+											Локальний
+											<br>
+											гід
+										</p>
+									</div>
+								</li>
+								<li data-fls-choiceelem="" class="choice-section__element choice-elem">
+									<figure class="choice-elem__picture">
+										<a href="#" class="choice-elem__picture-link">
+											<picture>
+												<img loading="lazy" alt="Image 04" src="./assets/img/choice/picture_04.webp" srcset="./assets/img/choice/picture_04.webp 1x,./assets/img/choice/picture_04-2x.webp 2x,./assets/img/choice/picture_04-3x.webp 3x">
+											</picture>
+										</a>
+									</figure>
+									<div class="choice-elem__body">
+										<p class="choice-elem__text">
+											Допомога
+											<br>
+											24/7
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section data-fls-faqsection="" class="tours__faq-section faq-section">
+						<div class="faq-section__container">
+							<h2 data-fls-title="" class="faq-section__title title title--middle">
+								Часті питання
+								<span>faq</span>
+							</h2>
+							<div class="faq-section__content">
+								<div data-fls-spollers="" data-fls-spollers-one="" class="faq-section__spollers spollers">
+									<details data-fls-spollers-open="" class="spollers__item">
+										<summary class="spollers__title --icon-plus">Наскільки наперед краще бронювати екскурсії?</summary>
+										<div class="spollers__body">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem aspernatur recusandae fuga, ab repellat voluptate ex doloribus impedit, nam aperiam. Magnam veniam sequi voluptas porro unde blanditiis saepe totam!
+											</p>
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title --icon-plus">Коли краще поїхати на узбережжя Амальфі?</summary>
+										<div class="spollers__body">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem aspernatur recusandae fuga, ab repellat voluptate ex doloribus impedit, nam aperiam. Magnam veniam sequi voluptas porro unde blanditiis saepe totam!
+											</p>
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title --icon-plus">Чи можна з дітьми?</summary>
+										<div class="spollers__body">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem aspernatur recusandae fuga, ab repellat voluptate ex doloribus impedit, nam aperiam. Magnam veniam sequi voluptas porro unde blanditiis saepe totam!
+											</p>
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title --icon-plus">Чи є послуга трансферу?</summary>
+										<div class="spollers__body">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem aspernatur recusandae fuga, ab repellat voluptate ex doloribus impedit, nam aperiam. Magnam veniam sequi voluptas porro unde blanditiis saepe totam!
+											</p>
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title --icon-plus">Наскільки наперед краще бронювати екскурсії?</summary>
+										<div class="spollers__body">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem aspernatur recusandae fuga, ab repellat voluptate ex doloribus impedit, nam aperiam. Magnam veniam sequi voluptas porro unde blanditiis saepe totam!
+										</div>
+									</details>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</main>
+			<section data-fls-subscribe="" class="subscribe">
+				<div class="subscribe__container">
+					<h2 data-fls-title="" class="subscribe__title title title--middle">
+						Підпишіться на розсилку
+						<span>subscribe</span>
+					</h2>
+					<p class="subscribe__text">Заощадьте до 50% на турах та поїздках. Отримайте миттєвий доступ до нижчих цін.</p>
+					<form class="subscribe__form form-subs" data-fls-form-validatenow="" data-fls-form="dev" data-fls-form-popup="popup" method="POST" action="/sendmail" novalidate>
+						<input required type="email" name="form[email]" data-fls-form-errtext="Error" placeholder="E-mail" class="form-subs__input input">
+						<button type="submit" class="form-subs__button button button--yel">
+							Підписатися
+							<span class="--icon-arrow_right"></span>
+						</button>
+					</form>
+				</div>
+			</section>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<ul data-fls-sociallist="" class="footer__social-list social-list">
+						<li class="social-list__social-elem">
+							<a href="#" class="social-list__link --icon-s-insta" aria-label="Instagram"></a>
+						</li>
+						<li class="social-list__social-elem">
+							<a href="#" class="social-list__link social-list__link--youtube --icon-s-youtube" aria-label="Youtube"></a>
+						</li>
+						<li class="social-list__social-elem">
+							<a href="#" class="social-list__link --icon-s-telega" aria-label="Telegram"></a>
+						</li>
+					</ul>
+					<div class="footer__info">
+						<ul class="footer__info-elements">
+							<li class="footer__info-element">
+								<p>Copyright © 2026</p>
+							</li>
+							<li class="footer__info-element">
+								<a href="#" class="footer__info-link">Политика конфиденциальности</a>
+							</li>
+							<li class="footer__info-element">
+								<a href="#" class="footer__info-link">Cookies Policy</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__bottom">
+						<p class="footer__bottom-text">
+							Developed by
+							<a href="#" class="--icon-logo_michael">Michael Studioo</a>
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

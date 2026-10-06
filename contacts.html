@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <link rel="shortcut icon" href="@img/favicon.ico"> -->
+		<title>Contacts Page</title>
+		<script type="module" crossorigin="" src="./js/contacts.min.js?v=1782892379015"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1782892379015">
+		<link rel="modulepreload" crossorigin="" href="./js/banner.min.js?v=1782892379015">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1782892379015">
+		<link rel="stylesheet" crossorigin="" href="./css/banner.min.css?v=1782892379015">
+		<link rel="stylesheet" crossorigin="" href="./css/contacts.min.css?v=1782892379015">
+		<link rel="stylesheet" crossorigin="" href="./css/contentform.min.css?v=1782892379015">
+		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1782892379015">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" data-fls-header-scroll="600" data-fls-header-scroll-show="" class="header">
+				<div class="header__container">
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="about.html" class="menu__link">Про мене</a>
+								</li>
+								<li class="menu__item">
+									<a href="tours.html" class="menu__link">екскурсії</a>
+								</li>
+								<li class="menu__item">
+									<a href="testimonials.html" class="menu__link">Відгуки</a>
+								</li>
+								<li class="menu__item">
+									<a href="faq.html" class="menu__link">FAQ</a>
+								</li>
+								<li class="menu__item">
+									<a href="contacts.html" class="menu__link menu__link--active">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+				</div>
+			</header>
+			<main class="page">
+				<div data-fls-contacts="" class="contacts">
+					<section data-fls-banner="" class="contacts__banner banner banner--second">
+						<div class="banner__container">
+							<h1 data-fls-title="" class="banner__title title title--middle title--white">
+								Часті питання
+								<span>contacts</span>
+							</h1>
+						</div>
+					</section>
+					<div data-fls-breadcrumbs="" class="contacts__breadcrumbs breadcrumbs">
+						<div class="breadcrumbs__container">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<a href="index.html" class="breadcrumbs__link">Головна</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Контакти</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="contacts__intercourse intercourse">
+						<div class="intercourse__container">
+							<div class="intercourse__connection">
+								<div class="intercourse__elements">
+									<!-- Телефон -->
+									<div class="intercourse__element">
+										<div class="intercourse__lable">Телефон/WhatsApp</div>
+										<p class="intercourse__value">
+											<a href="tel:+393279140443" class="intercourse__phone">+393279140443</a>
+										</p>
+									</div>
+									<!-- Email -->
+									<div class="intercourse__element">
+										<div class="intercourse__lable">Email</div>
+										<p class="intercourse__value">
+											<a href="mailto:amalfitana@gmail.com" class="intercourse__phone">amalfitana@gmail.com</a>
+										</p>
+									</div>
+									<!-- Соціальні мережі -->
+									<div class="intercourse__element">
+										<div class="intercourse__lable">Соціальні мережі</div>
+										<ul data-fls-sociallist="" class="intercourse__socials social-list">
+											<li class="social-list__social-elem">
+												<a href="#" class="social-list__link --icon-s-insta" aria-label="Instagram"></a>
+											</li>
+											<li class="social-list__social-elem">
+												<a href="#" class="social-list__link social-list__link--youtube --icon-s-youtube" aria-label="Youtube"></a>
+											</li>
+											<li class="social-list__social-elem">
+												<a href="#" class="social-list__link --icon-s-telega" aria-label="Telegram"></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<aside class="intercourse__aside">
+								<section data-fls-contentform="" class="intercourse__content-form content-form">
+									<div class="content-form__body">
+										<h2 data-fls-title="" class="content-form__title title title--small">
+											Задати питання
+											<span>checkout</span>
+										</h2>
+										<div class="content-form__text">Найкращі подорожі — це ті, де все відчувається легко</div>
+										<form class="content-form__form form" data-fls-form="dev" data-fls-form-popup="popup" method="POST" action="/sendmail">
+											<div class="form__list">
+												<!-- Ім'я -->
+												<div class="form__line line">
+													<input required type="text" name="name" data-fls-form-errtext="Введіть своє ім'я" placeholder="Ваше ім'я" class="line__input input">
+													<span class="line__icon --icon-user"></span>
+												</div>
+												<!-- Email -->
+												<div class="form__line line">
+													<input required type="email" name="form[email]" data-fls-form-errtext="Error" placeholder="Ваша пошта" class="line__input input">
+													<span class="line__icon --icon-mail"></span>
+												</div>
+												<!-- Написати питання -->
+												<div class="form__line line">
+													<textarea data-fls-input="" autocomplete="off" name="form[]" placeholder="Напишіть питання" data-fls-form-errtext="Помилка" class="line__input input"></textarea>
+													<span class="line__icon --icon-help"></span>
+												</div>
+											</div>
+											<button data-fls-button="" type="submit" class="form__button button button--yel">
+												Задати питання
+												<span class="--icon-arrow_right"></span>
+											</button>
+										</form>
+									</div>
+								</section>
+							</aside>
+						</div>
+					</div>
+				</div>
+			</main>
+			<section data-fls-subscribe="" class="subscribe">
+				<div class="subscribe__container">
+					<h2 data-fls-title="" class="subscribe__title title title--middle">
+						Підпишіться на розсилку
+						<span>subscribe</span>
+					</h2>
+					<p class="subscribe__text">Заощадьте до 50% на турах та поїздках. Отримайте миттєвий доступ до нижчих цін.</p>
+					<form class="subscribe__form form-subs" data-fls-form-validatenow="" data-fls-form="dev" data-fls-form-popup="popup" method="POST" action="/sendmail" novalidate>
+						<input required type="email" name="form[email]" data-fls-form-errtext="Error" placeholder="E-mail" class="form-subs__input input">
+						<button type="submit" class="form-subs__button button button--yel">
+							Підписатися
+							<span class="--icon-arrow_right"></span>
+						</button>
+					</form>
+				</div>
+			</section>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<ul data-fls-sociallist="" class="footer__social-list social-list">
+						<li class="social-list__social-elem">
+							<a href="#" class="social-list__link --icon-s-insta" aria-label="Instagram"></a>
+						</li>
+						<li class="social-list__social-elem">
+							<a href="#" class="social-list__link social-list__link--youtube --icon-s-youtube" aria-label="Youtube"></a>
+						</li>
+						<li class="social-list__social-elem">
+							<a href="#" class="social-list__link --icon-s-telega" aria-label="Telegram"></a>
+						</li>
+					</ul>
+					<div class="footer__info">
+						<ul class="footer__info-elements">
+							<li class="footer__info-element">
+								<p>Copyright © 2026</p>
+							</li>
+							<li class="footer__info-element">
+								<a href="#" class="footer__info-link">Политика конфиденциальности</a>
+							</li>
+							<li class="footer__info-element">
+								<a href="#" class="footer__info-link">Cookies Policy</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__bottom">
+						<p class="footer__bottom-text">
+							Developed by
+							<a href="#" class="--icon-logo_michael">Michael Studioo</a>
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

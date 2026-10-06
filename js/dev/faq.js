@@ -1,0 +1,3 @@
+import "./main.min.js";
+import "./faqsection.min.js";
+import "./banner.min.js";
